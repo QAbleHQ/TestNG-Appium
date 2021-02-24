@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="eResources ">
+    <listeners>
+        <listener class-name="Core.Devices"/>
+    </listeners>
+
+    <test  name="TC_AUTO_MOB_007 Approved user is able to access the content" verbose="2">
+             <classes>
+                 <class name="Tests.eResources">
+                 <methods>
+                     <include name="verify_user_able_to_access_content"></include>
+                 </methods>
+                 </class>
+             </classes>
+         </test>
+
+    <test  name="TC_AUTO_MOB_008 verify rejected user able to not access content" verbose="2">
+        <classes>
+            <class name="Tests.eResources">
+                <methods>
+                    <include name="verify_rejected_user_able_to_not_access_content"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+    <test  name="TC_AUTO_MOB_009 verify blocked user able to not access content" verbose="2">
+        <classes>
+            <class name="Tests.eResources">
+                <methods>
+                    <include name="verify_blocked_user_able_to_not_access_content"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+</suite>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="Home">
+
+
+    <test  name="TC_AUTO_MOB_011 verify user is able to add bookmark" verbose="2">
+             <classes>
+                 <class name="Tests.Dashboard">
+                 <methods>
+
+                     <include name="verify_user_able_to_add_bookmark"></include>
+                 </methods>
+                 </class>
+             </classes>
+         </test>
+
+    <test  name="TC_AUTO_MOB_012 verify user is able to add article" verbose="2">
+        <classes>
+            <class name="Tests.Dashboard">
+                <methods>
+                    <include name="verify_user_able_to_add_article"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test  name="TC_AUTO_MOB_013 verify user is able to search with other search engine" verbose="2">
+        <classes>
+            <class name="Tests.Dashboard">
+                <methods>
+                    <include name="verify_search_is_working_for_other_search_engine"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>

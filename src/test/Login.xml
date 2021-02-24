@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="Home">
+
+
+   <test  name="TC_AUTO_MOB_015 verify user is able to Login" verbose="2">
+           <classes>
+                 <class name="Tests.LoginTests">
+                 <methods>
+                     <include name="loginWirthValidCredentials"></include>
+                 </methods>
+                 </class>
+             </classes>
+         </test>
+
+<!--    <test  name="TC_AUTO_MOB_016 verify InValid User Login" verbose="2">-->
+<!--        <classes>-->
+<!--            <class name="Tests.LoginTests">-->
+<!--                <methods>-->
+<!--                    <include name="loginWirthInValidCredentials"></include>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+   <!-- <test  name="TC_AUTO_MOB_017 Verify Help and Feedback and Send one feedback Login" verbose="2">
+        <classes>
+            <class name="Tests.LoginTests">
+                <methods>
+                    <include name="helpCenterAndSendFeedBack"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>-->
+
+</suite>

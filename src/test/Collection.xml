@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Collection ">
+   <test  name="TC_AUTO_MOB_001 Add New Article" verbose="2">
+             <classes>
+                 <class name="Tests.Collection">
+                 <methods>
+                     <include name="add_new_article"></include>
+                 </methods>
+                 </class>
+             </classes>
+         </test>
+
+     <test  name=" TC_AUTO_MOB_02 Create New Collection" verbose="2">
+                 <classes>
+                     <class name="Tests.Collection">
+                         <methods>
+                             <include name="createNewCollection"></include>
+                         </methods>
+                     </class>
+                 </classes>
+             </test>
+
+    <test  name="TC_AUTO_MOB_03 Edit Article Title" verbose="2">
+          <classes>
+              <class name="Tests.Collection">
+                  <methods>
+                      <include name="edit_article_name"></include>
+                  </methods>
+              </class>
+          </classes>
+      </test>
+
+      <test  name="TC_AUTO_MOB_04 Favourite Article">
+          <classes>
+              <class name="Tests.Collection">
+                  <methods>
+                      <include name="favourite_article"></include>
+                  </methods>
+              </class>
+          </classes>
+      </test>
+
+
+      <test  name="TC_AUTO_MOB_05 move_article">
+          <classes>
+              <class name="Tests.Collection">
+                  <methods>
+                      <include name="move_article"></include>
+                  </methods>
+              </class>
+          </classes>
+      </test>
+        <test  name="TC_AUTO_MOB_06 add_tags_on_article">
+        <classes>
+            <class name="Tests.Collection">
+                <methods>
+                    <include name="add_tags_on_article"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+
+    <test  name="TC_AUTO_MOB_010 select_article_and_open">
+        <classes>
+            <class name="Tests.Collection">
+                <methods>
+                    <include name="select_article_and_open"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
